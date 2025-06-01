@@ -15,31 +15,31 @@ public class Main {
                 case 1:
                     double i1 = InputHandler.inputDouble("Enter current (Ampere): ");
                     double r1 = InputHandler.inputDouble("Enter resistance (Ohm): ");
-                    System.out.println("Voltage = " + ElectricCalculator.calculateVoltage(i1, r1) + " Volt");
+                    System.out.println("Voltage = " + ElectricityCalculator.calculateVoltage(i1, r1) + " Volt");
                     break;
 
                 case 2:
                     double v2 = InputHandler.inputDouble("Enter voltage (Volt): ");
                     double r2 = InputHandler.inputDouble("Enter resistance (Ohm): ");
-                    System.out.println("Current = " + ElectricCalculator.calculateCurrent(v2, r2) + " Ampere");
+                    System.out.println("Current = " + ElectricityCalculator.calculateCurrent(v2, r2) + " Ampere");
                     break;
 
                 case 3:
                     double v3 = InputHandler.inputDouble("Enter voltage (Volt): ");
                     double i3 = InputHandler.inputDouble("Enter current (Ampere): ");
-                    System.out.println("Resistance = " + ElectricCalculator.calculateResistance(v3, i3) + " Ohm");
+                    System.out.println("Resistance = " + ElectricityCalculator.calculateResistance(v3, i3) + " Ohm");
                     break;
 
                 case 4:
                     int seriesCount = InputHandler.inputResistorCount();
                     double[] rSeries = InputHandler.inputArrayResistor(seriesCount);
-                    System.out.println("Total series resistance = " + ElectricCalculator.calculateSeriesResistance(rSeries) + " Ohm");
+                    System.out.println("Total series resistance = " + ElectricityCalculator.calculateSeriesResistance(rSeries) + " Ohm");
                     break;
 
                 case 5:
                     int parallelCount = InputHandler.inputResistorCount();
                     double[] rParallel = InputHandler.inputArrayResistor(parallelCount);
-                    System.out.println("Total parallel resistance = " + ElectricCalculator.calculateParallelResistance(rParallel) + " Ohm");
+                    System.out.println("Total parallel resistance = " + ElectricityCalculator.calculateParallelResistance(rParallel) + " Ohm");
                     break;
 
                 case 6:
