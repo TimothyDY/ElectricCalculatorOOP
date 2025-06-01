@@ -1,4 +1,4 @@
-public class ElectricCalculator {
+public class ElectricityCalculator {
 
     public static double calculateVoltage(double current, double resistance) {
         return current * resistance;
